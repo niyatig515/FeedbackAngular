@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class FeedbackService {
-  private apiUrl = 'https://localhost:7100/api/feedback'; // Use your .NET API port
+  private apiUrl = 'https://niyati-feedback-api-b6dfdsh4bagpe9gz.centralus-01.azurewebsites.net/'; // Use your .NET API port
 
   constructor(private http: HttpClient) {}
 

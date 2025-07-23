@@ -28,7 +28,7 @@ import {
 const CLIENT_ID = '99aed11d-9e80-4e29-ae33-865be6b47df5';
 const TENANT_ID = 'b41b72d0-4e9f-4c26-8a69-f949f367c91d';
 const AUTHORITY = `https://login.microsoftonline.com/${TENANT_ID}`;
-const REDIRECT_URI = 'http://localhost:4200';
+const REDIRECT_URI = 'https://proud-smoke-030953510.2.azurestaticapps.net/';
 
 // Create the MSAL instance
 const msalInstance = new PublicClientApplication({

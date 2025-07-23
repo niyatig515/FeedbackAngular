@@ -27,11 +27,11 @@ jobs:
           node-version: '20.x'
  
       - name: Install Dependencies
-        working-directory: ./frontend
+        working-directory: ""
         run: npm install
  
       - name: Build Angular Project
-        working-directory: ./frontend
+        working-directory: ""
         run: npm run build -- --configuration production
  
       - name: Deploy to Azure Static Web Apps
@@ -41,8 +41,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: upload
           skip_app_build: true
-          app_location: "dist/frontend/browser"
-          api_location: ""
+          app_location: "dist/feedback-app/browser"
           output_location: ""
  
   close_pull_request_job:

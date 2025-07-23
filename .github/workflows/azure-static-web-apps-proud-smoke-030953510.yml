@@ -27,11 +27,11 @@ jobs:
           node-version: '20.x'
  
       - name: Install Dependencies
-        working-directory: ./FeedbackAngular
+        working-directory: ""
         run: npm install
  
       - name: Build Angular Project
-        working-directory: ./FeedbackAngular
+        working-directory: ""
         run: npm run build -- --configuration production
  
       - name: Deploy to Azure Static Web Apps
